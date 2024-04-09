@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- INICIO HTML -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto Ticket.com - Sitio Oficial de Venta de Entradas</title>
+    <link rel="shortcut icon" href="https://static.puntoticket.com/favicon_2021.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+
+  // Función para Categoría
+  function toggleAnimation() {
+    var boton = document.querySelector('.hamburguesa');
+    boton.classList.toggle('active');
+  }
+
+  // Función Cambio de tema diurno y nocturno
+  var isDay = true;
+
+  function change_background_body() {
+    var img = document.getElementById('tema'); // Asegúrate de reemplazar 'tema' con el id de tu imagen
+  if (isDay) {
+    document.body.style.backgroundColor = '#000A22'; /* Color de noche */
+    document.body.style.color = '#F0F8FF'; /* Color de texto para el fondo de noche */
+    img.src = 'img/noche.png'; // Asegúrate de reemplazar 'img/temaNoche.png' con la ruta de tu imagen de noche
+    isDay = false;
+
+  } else {
+    document.body.style.backgroundColor = '#F0F8FF'; /* Color de día */
+    document.body.style.color = '#000A22'; /* Color de texto para el fondo de día */
+    img.src = 'img/tema.png'; // Asegúrate de reemplazar 'img/temaDia.png' con la ruta de tu imagen de día
+    isDay = true;
+  }
+}
+    document.getElementById("miBoton").addEventListener("click", function change_background_body() {
+    document.body.style.color = "white"; // Cambia esto al color que desees
+});
+    </script>
+</head>
+
+<!-- Inicio Cuerpo HTML -->
+<body>
+      <div class="navbar">
+        <a href="https://www.puntoticket.com/">Inicio</a>
+        <a href="#">|</a>
+        <a href="https://teleticket.com.pe/">TLK</a>
+        <div class="image_theme"><a href="#"><img src="img/tema.png" onclick="change_background_body()" title="Cambiar tema" width="50" height="50" id="tema"></a></div>
+      </div>
+
+    <!-- Encabezado -->
+    <header>
+      <table border="0" width="1415">
+        <tr>
+          <div class="container_header">
+          <td>
+          <div class="image_header"><img src="img/punto_ticket.PNG" alt="PuntoTicket" class="logo"></div>  
+          </td>
+          <td class="category">
+
+            <!-- Creación Imagen Categoría -->
+            <div class="hamburguesa" onclick="toggleAnimation()">
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+            </div>
+
+          <div class="image_category"><img src="img/categoria.PNG"></div>
+          </td>
+          <td class="search">
+            <input style="width: 330px; height: 50px;" type="search" name="" id="" placeholder="Busca por artista, evento o lugar">
+          </td>
+          <td class="text"></td>
+          <td>
+            <div class="container_login">
+            <div class="icon_profile"><img src="img/icono_perfil.PNG"></div>
+            <div class="parrafo1"><a href="https://www.puntoticket.com/Account/SignIn">INGRESA</div></a>
+            <div class="parrafo2"><a href="https://www.puntoticket.com/Account/Register">REGÍSTRATE</div></a>
+            </div>
+          </div>
+          </td>
+        </tr>
+      </table>
+    </header>
+
+    <!-- Slider -->
+    <div id="slider"></div>
+
+    <!-- Inicio Tabla Tarjetas -->
+    <table class="table_cards" border="0" width="1400" height="700">
+      <tr> <!-- Primera Fila Tarjetas -->
+        <td class="first_card"> <!-- Primera Columna Tarjetas -->
+          <div class="card">  
+          <img src="https://static.ptocdn.net/images/eventos/biz246_calugalistado.jpg" 
+          onerror="this.src='https://cdnp.puntoticket.com/content/assets/landing-2021/480x220.jpg'" alt="" loading="eager" class="img--evento"></div><br><br>
+          <div class="description_card">
+          <strong style="font-size: 10px;">ESTADIO NACIONAL - ÑUÑOA / CONCIERTOS</strong>
+          <h3>Karol G - Mañana Será Bonito Tour</h3>
+          <p style="font-size: 12px;">19 de abril 2024 - 21 de abril 2024</p>
+          </div>
+        </td>
+
+        <!-- Segunda Columna Tarjetas -->      
+        <td class="second_card">
+          <div class="card">
+          <img src="https://static.ptocdn.net/images/eventos/wal197_calugalistado.jpg" 
+          onerror="this.src='https://cdnp.puntoticket.com/content/assets/landing-2021/480x220.jpg'" alt="" loading="eager" class="img--evento"></div><br><br>
+            <div class="description_card2">
+          <b style="font-size: 10px;">ESTADIO NACIONAL - ÑUÑOA / ROCK</b>
+          <h3>Los Bunkers - Ven Aquí</h3>
+          <p style="font-size: 12px;">27 de abril 2024 - 28 de abril 2024</p>
+          </div>
+        </td>
+
+        <!-- Tercera Columna Tarjetas -->      
+        <td rowspan="3">
+        <p class="titulo_aside">DESTACADOS</p>
+          <div class="three_card">
+          <div class="card_aside"><a href="https://www.puntoticket.com/estacionamientos"><img src="img/estacionamiento.PNG" alt="derecha"></a></div>
+          <div class="card_aside"><a href="https://ayuda.puntoticket.com/hc/es"><img src="img/soporte_fans.PNG" alt="derecha"></a></div>
+          <div class="card_aside"><a href="https://www.puntoticket.com/movistar-arena"><img src="img/movistar_arena.PNG" alt="derecha"></a></div>
+          <div class="card_aside"><a href="https://www.puntoticket.com/teatro-caupolican"><img src="img/caupolican.PNG" alt="derecha"></a></div>
+          <div class="card_aside"><a href="https://www.puntoticket.com/basel"><img src="img/basel.PNG" alt="derecha"></a></div>
+          <div class="card_aside"><a href="https://www.puntoticket.com/teatro-coliseo"><img src="img/coliseo.PNG" alt="derecha"></a></div>
+          </div>
+        </td>        
+      </tr>
+
+      <!-- Segunda Fila Tarjetas -->
+      <tr>
+        <td class="four_card"> <!-- Primera Columna Tarjetas -->
+          <div class="card">
+          <img src="https://static.ptocdn.net/images/eventos/jts063_calugalistado.jpg" onerror="this.src='https://cdnp.puntoticket.com/content/assets/landing-2021/480x220.jpg'" alt="" loading="eager" class="img--evento"></div><br><br>
+            <div class="description_card4">
+          <b style="font-size: 10px;">ESPACIO RIESCO - HUECHARABA / FESTIVAL</b>
+          <h3>Ultra Music Festival</h3>
+          <p style="font-size: 10px;">19 de abril 2024 - 20 de abril 2024</p>
+            </div>
+        </td>
+        <td class="five_card">
+          <div class="card">
+          <img src="https://static.ptocdn.net/images/eventos/nxo029_calugalistado.jpg" onerror="this.src='https://cdnp.puntoticket.com/content/assets/landing-2021/480x220.jpg'" alt="" loading="eager" class="img--evento"></div><br><br>
+            <div class="description_card5">
+          <b style="font-size: 10px;">ESTADIO MAPOCHO - SANTIAGO CENTRO / EXHIBICIÓN</b>
+          <h3>Super Japan Expo 2024</h3>
+          <p style="font-size: 10px;">09 de mayo 2024 - 12 de mayo 2024</p>
+            </div>
+        </td>
+      </tr>
+    </table>
+
+     <!-- Inicio Footer -->
+    <footer>
+      <!-- Inicio Tabla Footer -->
+      <table class="table_footer" border="0" width="1415" height="300">
+        <tr> <!-- Primera Fila -->
+          <div>
+            <td class="image_footer">
+              <img src="https://cdnp.puntoticket.com/content/assets/landing-2021/logo-footer.png" alt="logo punto ticket footer" class="logo--footer float-left d-none d-sm-block">
+            </td>
+          </div>
+
+          <div>
+            <!-- Primera Columna -->
+            <td class="first_column_footer">
+              <p style="color: whitesmoke; padding-left: 33px; margin-bottom: 25px; font-family: sans-serif; font-size: 13px;">CONOZCÁMONOS</p>
+            <ul>
+              <li><a href="https://www.puntoticket.com/paginas/somos">Acerca de Nosotros</li></a>
+              <li><a href="https://ayuda.puntoticket.com/hc/es">Preguntas Frecuentes</li></a>
+              <li><a href="https://www.puntoticket.com/paginas/condiciones">Términos y condiciones</li></a>
+              <li><a href="https://static.ptocdn.net/docs/codigoetica.pdf">Código de ética</li></a>
+            </ul>
+            </td>
+          </div>
+
+          <div>
+            <!-- Segunda Columna -->
+            <td class="second_column_footer">
+              <div class="title_parraf">
+              <p>TRABAJEMOS JUNTOS</p>
+              </div>
+              <ul>
+                <li><a href="https://form.typeform.com/to/glskupRY?typeform-source=www.puntoticket.com">¿Tienes un evento?</li></a>
+                <li><a href="https://form.typeform.com/to/glskupRY?typeform-source=www.puntoticket.com">Venta empresas</li></a>
+                <li><a href="https://form.typeform.com/to/xhCtpIgh?typeform-source=www.puntoticket.com">Envíanos tu CV</li></a>
+              </ul>
+            </td>
+          </div>
+
+          <div>
+            <!-- Tercera Columna -->
+            <td class="social_networks">
+            <p style="color: whitesmoke; padding-left: 33px; margin-bottom: 48px; font-family: sans-serif; font-size: 13px;">CONVERSEMOS</p>
+            <div class="facebook">
+            <a href="http://www.facebook.com/puntoticket" aria-label="Siguenos en Facebook"><img src="img/facebook.PNG" width="50" alt="icono" class="ico-footer"></a>
+            </div>
+            <div class="instagram">
+            <a href="https://www.instagram.com/puntoticket" aria-label="Siguenos en Instagram"><img src="img/instagram.PNG" width="50" alt="instagram"><i aria-hidden="true" class="fab  fa-instagram"></i></a>
+            </div>
+            <div class="twitter">
+            <a href="http://twitter.com/puntoticket" aria-label="Siguenos en Twitter"><img src="img/twitter.PNG" width="50" alt="icono" class="ico-footer"></a><br><br>
+            </div>
+            <br><br>
+            <div class="centro_ayuda">
+            <a href="https://puntoticket.zendesk.com/hc/es" class="centro-ayuda--footer">CENTRO DE AYUDA</a>
+            </div>
+            </td>
+          </div>
+        </tr>
+      </table>
+    </footer> <!-- Fin Footer -->
+  </body>
+</html> <!-- FIN HTML -->
